@@ -32,7 +32,7 @@ public class TweetController {
         return tweetService.getAllHashTags();
     }
 
-    @GetMapping("/tweet/all")
+    @GetMapping("/tweets")
     public List<Tweet> getAllTweets() {
         return tweetService.getAllTweets();
     }

@@ -26,7 +26,6 @@ public class TweetService {
 
     public Map<String, Integer> getTopTweetTrends() {
         Map<String, Integer> lookupData = tweetDao.getLookup();
-        System.out.println("LookUpData :: " + lookupData);
         return tweetUtil.getTop10TweetTrends(lookupData);
     }
 
